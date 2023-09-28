@@ -1,0 +1,41 @@
+<!-- src/app/product-list/product-list.component.html -->
+
+<div class="container">
+    <div><h2 style="text-align: center;">Product List</h2>
+        <button class="btn btn-primary" [ngStyle]="{float:'right'}" (click)="openCart('/cart',0)">cart</button></div>
+    <div class="filters"><br>
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter" [(ngModel)]="selectedCategory">
+          <option value="">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <!-- Add more categories as needed -->
+        </select>
+    
+        <label for="sortOrder">Sort by Price:</label>
+        <select id="sortOrder" [(ngModel)]="selectedSortOrder">
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+        &nbsp;<button class="btn btn-primary" (click)="applyFiltersAndSorting()">filter</button>
+      </div><br>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let product of filteredProducts">
+        <div class="card">
+          <img class="card-img-top" [src]="product.image" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">Price: ${{ product.price }}</p>
+            <button class="btn btn-primary" [ngStyle]="{float:'right'}" (click)="addToCart(product)">Add to Cart</button>
+            <button class="btn btn-primary" [ngStyle]="{float:'left'}" (click)="openCart('/products/',product.id)">Product Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br><br>
+  
+
+  

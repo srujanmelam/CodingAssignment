@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "Air conditioner",
+      "image": "https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_700x394/public/2022/07/18/190239-ac-pixabay.png?itok=OwGokHGs",
+      "price": 59.99,
+      "description": "Description of Product 1",
+      "category":"Electronics",
+      "quantity":1
+    },
+    {
+      "id": 2,
+      "name": "Levis t-shirt",
+      "image": "https://logowik.com/content/uploads/images/levis-original-jeans4491.jpg",
+      "price": 15.99,
+      "description": "Description of Product 2",
+      "category":"Clothing",
+      "quantity":1
+    },
+    {
+        "id": 3,
+        "name": "Pepe Jeans",
+        "image": "https://www.dfupublications.com/images/2021/11/23/Pepe%20Logo(Aum)_large.jpg",
+        "price": 19.99,
+        "description": "Description of Product 3",
+        "category":"Clothing",
+        "quantity":1
+    },
+    {
+        "id": 4,
+        "name": "Boat Watch",
+        "image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_01_95d6b90e-ab41-402c-bc3d-dfd5545d98a4.jpg?v=1639989127",
+        "price": 21.99,
+        "description": "Description of Product 3",
+        "category":"Electronics",
+        "quantity":1
+    }
+    
+
+
+  ]
+  
